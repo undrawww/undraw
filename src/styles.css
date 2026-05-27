@@ -1,0 +1,38 @@
+:root {
+  color-scheme: light;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 18px;
+  background: #f2f1ef;
+  color: #111111;
+  line-height: 1.6;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+.gallery-fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+}
+
+.gallery-fade-in.gallery-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
