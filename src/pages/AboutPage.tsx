@@ -229,13 +229,13 @@ export default function AboutPage() {
                     loop
                     playsInline
                     autoPlay
-                    className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="w-full h-auto block transition-all duration-500 group-hover:scale-[1.03] grayscale group-hover:grayscale-0"
                   />
                 ) : (
                   <img
                     src={work.image}
                     alt={work.title}
-                    className="w-full h-auto block transition-transform duration-500 group-hover:scale-[1.03]"
+                    className="w-full h-auto block transition-all duration-500 group-hover:scale-[1.03] grayscale group-hover:grayscale-0"
                   />
                 )}
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/50 transition-all duration-500 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100">
